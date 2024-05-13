@@ -296,7 +296,7 @@ nav ul li a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60%;
+  width: 70%;
   height: 12%;
   margin-top: 180px;
   background-color: rgba(255, 255, 255, 0.4);
@@ -312,7 +312,7 @@ nav ul li a:hover {
   padding-right: 5px;
   color: #a148b7;
 }
- 
+
 .study-year p {
   color: white;
 }
@@ -321,7 +321,7 @@ nav ul li a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60%;
+  width: 70%;
   height: 12%;
   margin-top: 60px;
   margin-left: auto;
@@ -343,7 +343,7 @@ nav ul li a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60%;
+  width: 70%;
   height: 12%;
   margin-top: 80px;
   margin-left: auto;
@@ -423,7 +423,6 @@ nav ul li a:hover {
 
   .wrapper2-content {
     margin-top: 10px;
-
   }
 
   .about-btn {
@@ -487,6 +486,18 @@ nav ul li a:hover {
   }
 }
 
+@media only screen and (max-width: 428px) {
+  .study-year {
+    width: 90%;
+  }
+  .digital-award {
+    width: 90%;
+  }
+  .project-finished {
+    width: 90%;
+  }
+}
+
 .skills {
   width: 100%;
   background-color: #504759;
@@ -534,7 +545,7 @@ nav ul li a:hover {
   background: #2f2f2f8a;
   display: flex;
   align-items: center;
-  transition:all 1s ease 0s;
+  transition: all 1s ease 0s;
 }
 
 .skill-item:hover {
@@ -576,11 +587,11 @@ nav ul li a:hover {
 }
 
 .school-wrapper2 h1 {
- color: white;
- font-size: 26px;
- font-weight: 600;
- padding-bottom: 40px;
- padding-top: 20px;
+  color: white;
+  font-size: 26px;
+  font-weight: 600;
+  padding-bottom: 40px;
+  padding-top: 20px;
 }
 
 .school-wrapper2 {
@@ -684,7 +695,7 @@ nav ul li a:hover {
     height: 25px;
     display: flex;
   }
-  
+
   .skill-item p {
     font-weight: 600;
     font-size: 14px;
