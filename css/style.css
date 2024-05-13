@@ -393,7 +393,12 @@ nav ul li a:hover {
 @media only screen and (max-width: 768px) {
   .home-container {
     flex-direction: column;
+    height: 540px;
     /* margin: auto; */
+  }
+
+  .wrapper2-content a {
+    /* display: none; */
   }
 
   .home-wrapper1 {
@@ -529,6 +534,12 @@ nav ul li a:hover {
   background: #2f2f2f8a;
   display: flex;
   align-items: center;
+  transition:all 1s ease 0s;
+}
+
+.skill-item:hover {
+  background-color: #a148b7;
+  border: 2px solid #f9f9f9;
 }
 
 .skill-item img {
@@ -540,7 +551,7 @@ nav ul li a:hover {
 
 .skill-item p {
   font-weight: 700;
-  font-size: 18\6px;
+  font-size: 18px;
   color: #f9f9f9;
 }
 
@@ -593,7 +604,6 @@ nav ul li a:hover {
 }
 
 .school-path {
-  height: 100%;
   width: 15px;
 }
 
@@ -631,4 +641,87 @@ nav ul li a:hover {
   width: 100%;
   height: 700px;
   background-color: #504759;
+}
+
+@media only screen and (max-width: 768px) {
+  .skill-wrapper {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .skill-wrapper h1 {
+    margin: 0 15px;
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .skill-list {
+    flex-direction: column;
+    width: auto;
+    margin: 0;
+  }
+
+  .skill-list2 {
+    flex-direction: column;
+    width: auto;
+    margin: 0;
+  }
+
+  .skill-item {
+    width: 155px;
+    height: 60px;
+    border: 1.5px solid #c3c3c3;
+    margin: 5px;
+    border-radius: 10px;
+  }
+
+  .skill-item img {
+    margin-left: 10px;
+    /* margin-right: 15px; */
+    height: 25px;
+    display: flex;
+  }
+  
+  .skill-item p {
+    font-weight: 600;
+    font-size: 14px;
+    color: #f9f9f9;
+  }
+
+  .sekumlah {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .school-wrapper {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+
+  .school-wrapper img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .school-wrapper2 {
+    width: 90%;
+    height: auto;
+    margin: auto;
+  }
+
+  .school-wrapper2 h1 {
+    padding-bottom: 30px;
+  }
+
+  .school-grade p {
+    margin-bottom: 30px;
+  }
 }
