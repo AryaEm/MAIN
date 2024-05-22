@@ -460,7 +460,7 @@ nav ul li a:hover {
 
   .about-wrapper3 {
     width: 50%;
-    margin-bottom: 40px;
+    margin-bottom: -80px;
   }
 
   .about-wrapper2 {
@@ -470,21 +470,26 @@ nav ul li a:hover {
   }
 
   .about-wrapper2 img {
-    width: 200px;
+    width: 150px;
   }
 
   .study-year {
     margin-top: 65px;
     height: 80px;
+    width: 200px;
+    transform: none;
   }
   .digital-award {
     margin-top: 25px;
     height: 80px;
+    width: 200px;
+    transform: none;
   }
   .project-finished {
     margin-top: 25px;
     height: 80px;
-  }
+    width: 200px;
+    transform: none;  }
 }
 
 .skills {
@@ -637,12 +642,6 @@ nav ul li a:hover {
   color: #c2c2c2;
 }
 
-.wife {
-  width: 100%;
-  height: 700px;
-  background-color: #504759;
-}
-
 @media only screen and (max-width: 768px) {
   .skill-wrapper {
     height: auto;
@@ -726,3 +725,55 @@ nav ul li a:hover {
     margin-bottom: 30px;
   }
 }
+
+.seng {
+  width: 100%;
+  height: 700px;
+  background-color: #504759;
+  display: flex;
+  align-items: center;
+  border: 1px solid blue;
+}
+
+.container7 {
+  width: 100%;
+  height: 100%;
+  border: 1px solid blue;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.wrapper7-1  {
+  width: 100%;
+  height: fit-content;
+  border: 1px solid yellow;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper7-2  {
+  width: 100%;
+  height: fit-content;
+  border: 1px solid yellow;
+  display: flex;
+  justify-content: center;
+
+}
+
+.img-7-1  {
+  width: 20%;
+  height: 100%;
+  border: 1px solid red;
+  margin: 0 20px;
+  background-image: url(/assets/zetanbg.png);
+  background-color: #504759;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.img-7-1 img {
+  width: 100%;
+}
+

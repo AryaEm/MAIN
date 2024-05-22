@@ -1,0 +1,60 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #504759;
+}
+
+.seng {
+  width: 100%;
+  height: 100vh;
+  background-color: #504759;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid blue;
+}
+
+.container7-atas {
+  width: 100%;
+  height: 48%;
+  border: 1px solid white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container7-bawah {
+  width: 100%;
+  height: 48%;
+  border: 1px solid white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.img7-1 {
+    width: 20%;
+    height: 100%;
+    border: 1px solid blue;
+    margin: 0 100px;
+    
+}
+
+.img7-2 {
+    width: 20%;
+    height: 100%;
+    border: 1px solid blue;
+    margin: 0 100px;
+    background-image: url(/assets/zwtaa.png);
+    background-color: #504759;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.img7-2 img {
+    width: 100%;
+    height: 100% ;
+}
