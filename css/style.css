@@ -32,7 +32,7 @@ nav div {
 
 nav {
   padding: 1.5rem 5rem;
-  background-color: #22182dac;
+  background-color: #22182d;
   display: flex;
   justify-content: space-between;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
@@ -131,7 +131,7 @@ nav ul li a:hover {
 
 .home-container {
   width: 100%;
-  height: 630px;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.9);
   /* background: #382d45; */
   display: flex;
@@ -393,12 +393,9 @@ nav ul li a:hover {
 @media only screen and (max-width: 768px) {
   .home-container {
     flex-direction: column;
-    height: 540px;
+    background-color: rgba(0, 0, 0, 0.579);
+    height: 100vh;
     /* margin: auto; */
-  }
-
-  .wrapper2-content a {
-    /* display: none; */
   }
 
   .home-wrapper1 {
@@ -437,7 +434,7 @@ nav ul li a:hover {
   }
 
   .wrapper1-content img {
-    width: 200px;
+    width: 160px;
   }
 
   .about-container {
@@ -460,7 +457,7 @@ nav ul li a:hover {
 
   .about-wrapper3 {
     width: 50%;
-    margin-bottom: -80px;
+    /* margin-bottom: -80px; */
   }
 
   .about-wrapper2 {
@@ -470,7 +467,7 @@ nav ul li a:hover {
   }
 
   .about-wrapper2 img {
-    width: 150px;
+    display: none;
   }
 
   .study-year {
@@ -593,7 +590,7 @@ nav ul li a:hover {
   width: 30%;
   height: 90%;
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(0, 0, 0, 0.537);
 }
 
 .school-wrapper2 h1 {
@@ -733,47 +730,5 @@ nav ul li a:hover {
   display: flex;
   align-items: center;
   border: 1px solid blue;
-}
-
-.container7 {
-  width: 100%;
-  height: 100%;
-  border: 1px solid blue;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-}
-
-.wrapper7-1  {
-  width: 100%;
-  height: fit-content;
-  border: 1px solid yellow;
-  display: flex;
-  justify-content: center;
-}
-
-.wrapper7-2  {
-  width: 100%;
-  height: fit-content;
-  border: 1px solid yellow;
-  display: flex;
-  justify-content: center;
-
-}
-
-.img-7-1  {
-  width: 20%;
-  height: 100%;
-  border: 1px solid red;
-  margin: 0 20px;
-  background-image: url(/assets/zetanbg.png);
-  background-color: #504759;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.img-7-1 img {
-  width: 100%;
 }
 
