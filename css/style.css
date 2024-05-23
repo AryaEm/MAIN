@@ -312,7 +312,7 @@ nav ul li a:hover {
   padding-right: 5px;
   color: #a148b7;
 }
- 
+
 .study-year p {
   color: white;
 }
@@ -420,7 +420,6 @@ nav ul li a:hover {
 
   .wrapper2-content {
     margin-top: 10px;
-
   }
 
   .about-btn {
@@ -486,7 +485,8 @@ nav ul li a:hover {
     margin-top: 25px;
     height: 80px;
     width: 200px;
-    transform: none;  }
+    transform: none;
+  }
 }
 
 .skills {
@@ -536,7 +536,7 @@ nav ul li a:hover {
   background: #2f2f2f8a;
   display: flex;
   align-items: center;
-  transition:all 1s ease 0s;
+  transition: all 1s ease 0s;
 }
 
 .skill-item:hover {
@@ -578,11 +578,11 @@ nav ul li a:hover {
 }
 
 .school-wrapper2 h1 {
- color: white;
- font-size: 26px;
- font-weight: 600;
- padding-bottom: 40px;
- padding-top: 20px;
+  color: white;
+  font-size: 26px;
+  font-weight: 600;
+  padding-bottom: 40px;
+  padding-top: 20px;
 }
 
 .school-wrapper2 {
@@ -681,7 +681,7 @@ nav ul li a:hover {
     height: 25px;
     display: flex;
   }
-  
+
   .skill-item p {
     font-weight: 600;
     font-size: 14px;
@@ -725,10 +725,124 @@ nav ul li a:hover {
 
 .seng {
   width: 100%;
-  height: 700px;
-  background-color: #504759;
+  min-height: 100vh;
+  position: absolute;
   display: flex;
+  justify-content: center;
   align-items: center;
-  border: 1px solid blue;
+  overflow: hidden;
+  background-color: #504759;
 }
 
+.container-z {
+  position: relative;
+  background-color: #a148b7b6;
+  width: 300px;
+  padding: 40px 40px 0 40px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1111;
+  transition: 0.3s;
+  transform: perspective(500px);
+  transform-style: preserve-3d;
+  margin: 0 20px;
+}
+
+.container-z:hover {
+  padding-bottom: 40px;
+}
+
+.imgboxz {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  z-index: 1;
+  transform: translateZ(50px);
+}
+
+.imgboxz img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: scale(0.9);
+  transition: 0.3s ease-in;
+  object-fit: cover;
+}
+
+.object {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  background: radial-gradient(#ffffff, #cccad5);
+  border-radius: 50%;
+  top: 10%;
+  left: 15%;
+  transition: 0.3s ease-in;
+}
+
+.container-z:hover .object {
+  width: 250px;
+  height: 250px;
+}
+
+.container-z:hover .imgboxz img {
+  transform: scale(1);
+}
+
+.bgtextz {
+  position: absolute;
+  font-size: 8em;
+  font-weight: 800;
+  top: 50%;
+  -webkit-text-stroke: 1px #fff;
+  opacity: 0.4;
+  color: transparent; 
+  z-index: -1;
+}
+
+.section-z {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+  transform: translateZ(50px);
+}
+
+.section-z h2 {
+  font-size: 1.6em;
+  color: #fff;
+  transition: 0.3s;
+  transform: translateY(100px);
+}
+
+.container-z:hover .section-z {
+  margin-top: 25px;
+}
+
+.container-z:hover .section-z h2 {
+  transition-delay: 0.2s;
+  transform: translateY(0);
+}
+
+.objpurple {
+  background: radial-gradient(#F395B4, #f07da3  );
+}
+
+.objgreen {
+  background: radial-gradient(#F4FDD3, #91ec87  );
+}
+
+.objblue {
+  background: radial-gradient(#4B7CC7, #234579  );
+}
+
+@media only screen and (max-width: 550px) {
+  .seng {
+    flex-direction: column;
+  }
+
+  .container-z {
+    margin: 20px 0;
+  }
+} 
