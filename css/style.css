@@ -537,6 +537,10 @@ nav ul li a:hover {
     font-size: 32px;
   }
 
+  .about1-content p {
+    font-size: 14px;
+  }
+
   .about-wrapper3 {
     width: 50%;
     /* margin-bottom: -80px; */
@@ -933,6 +937,7 @@ nav ul li a:hover {
 
   .container-z {
     margin: 20px 0;
+    width: 280px;
   }
 }
 
@@ -1218,3 +1223,25 @@ nav ul li a:hover {
   filter: blur(5px);
   transform: scale(0.9, 0.9);
 }
+
+@media only screen and (max-width: 550px) {
+  .cards-c {
+    flex-direction: column;
+  }
+
+  .certificates {
+    height: fit-content;
+  }
+
+  .card-c img {
+    height: 220px;
+  }
+
+  .cards-c .red,
+.cards-c .blue,
+.cards-c .green {
+  width: 340px;
+  height: 240px;
+}
+}
+
