@@ -560,7 +560,6 @@ nav ul li a:hover {
   font-size: 18px;
   color: #f9f9f9;
   transition: all 1s ease 0s;
-
 }
 
 .sekumlah {
@@ -802,7 +801,7 @@ nav ul li a:hover {
   top: 50%;
   -webkit-text-stroke: 1px #fff;
   opacity: 0.4;
-  color: transparent; 
+  color: transparent;
   z-index: -1;
 }
 
@@ -832,15 +831,15 @@ nav ul li a:hover {
 }
 
 .objpurple {
-  background: radial-gradient(#F395B4, #f07da3  );
+  background: radial-gradient(#f395b4, #f07da3);
 }
 
 .objgreen {
-  background: radial-gradient(#F4FDD3, #91ec87  );
+  background: radial-gradient(#f4fdd3, #91ec87);
 }
 
 .objblue {
-  background: radial-gradient(#4B7CC7, #234579  );
+  background: radial-gradient(#4b7cc7, #234579);
 }
 
 @media only screen and (max-width: 550px) {
@@ -852,16 +851,199 @@ nav ul li a:hover {
   .container-z {
     margin: 20px 0;
   }
-}  
+}
 
 .project {
   width: 100%;
-  height: 600px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: fit-content;
   overflow: hidden;
-  background-image: linear-gradient(306deg, rgba(54, 54, 54, 0.05) 0%, rgba(54, 54, 54, 0.05) 33.333%,rgba(85, 85, 85, 0.05) 33.333%, rgba(85, 85, 85, 0.05) 66.666%,rgba(255, 255, 255, 0.05) 66.666%, rgba(255, 255, 255, 0.05) 99.999%),linear-gradient(353deg, rgba(81, 81, 81, 0.05) 0%, rgba(81, 81, 81, 0.05) 33.333%,rgba(238, 238, 238, 0.05) 33.333%, rgba(238, 238, 238, 0.05) 66.666%,rgba(32, 32, 32, 0.05) 66.666%, rgba(32, 32, 32, 0.05) 99.999%),linear-gradient(140deg, rgba(192, 192, 192, 0.05) 0%, rgba(192, 192, 192, 0.05) 33.333%,rgba(109, 109, 109, 0.05) 33.333%, rgba(109, 109, 109, 0.05) 66.666%,rgba(30, 30, 30, 0.05) 66.666%, rgba(30, 30, 30, 0.05) 99.999%),linear-gradient(189deg, rgba(77, 77, 77, 0.05) 0%, rgba(77, 77, 77, 0.05) 33.333%,rgba(55, 55, 55, 0.05) 33.333%, rgba(55, 55, 55, 0.05) 66.666%,rgba(145, 145, 145, 0.05) 66.666%, rgba(145, 145, 145, 0.05) 99.999%),linear-gradient(90deg, rgb(80,71,89),rgb(80,71,89));
-  color: #fff;
-  font-size: 50px;
+  background-image: linear-gradient(
+      306deg,
+      rgba(54, 54, 54, 0.05) 0%,
+      rgba(54, 54, 54, 0.05) 33.333%,
+      rgba(85, 85, 85, 0.05) 33.333%,
+      rgba(85, 85, 85, 0.05) 66.666%,
+      rgba(255, 255, 255, 0.05) 66.666%,
+      rgba(255, 255, 255, 0.05) 99.999%
+    ),
+    linear-gradient(
+      353deg,
+      rgba(81, 81, 81, 0.05) 0%,
+      rgba(81, 81, 81, 0.05) 33.333%,
+      rgba(238, 238, 238, 0.05) 33.333%,
+      rgba(238, 238, 238, 0.05) 66.666%,
+      rgba(32, 32, 32, 0.05) 66.666%,
+      rgba(32, 32, 32, 0.05) 99.999%
+    ),
+    linear-gradient(
+      140deg,
+      rgba(192, 192, 192, 0.05) 0%,
+      rgba(192, 192, 192, 0.05) 33.333%,
+      rgba(109, 109, 109, 0.05) 33.333%,
+      rgba(109, 109, 109, 0.05) 66.666%,
+      rgba(30, 30, 30, 0.05) 66.666%,
+      rgba(30, 30, 30, 0.05) 99.999%
+    ),
+    linear-gradient(
+      189deg,
+      rgba(77, 77, 77, 0.05) 0%,
+      rgba(77, 77, 77, 0.05) 33.333%,
+      rgba(55, 55, 55, 0.05) 33.333%,
+      rgba(55, 55, 55, 0.05) 66.666%,
+      rgba(145, 145, 145, 0.05) 66.666%,
+      rgba(145, 145, 145, 0.05) 99.999%
+    ),
+    linear-gradient(90deg, rgb(80, 71, 89), rgb(80, 71, 89));
+}
+
+.project-header {
+  text-align: center;
+  padding-top: 80px;
+}
+
+.project-header h2 {
+  color: #a148b7;
+  font-size: 28px;
+}
+
+.project-header p {
+  color: #c3c3c3;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.project-container {
+  width: 100%;
+  /* border: 1px solid white; */
+  margin-top: 80px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project1 {
+  width: 70%;
+  height: 300px;
+  border-radius: 15px;
+  background-image: url(/assets/laundry.png);
+  background-size: 100%;
+  background-position: center;
+  border: 2px solid #a148b7;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  transition: background-size 0.1s ease-in;
+}
+
+.project1:hover {
+  background-size: 112%;
+}
+
+.project-wrapper {
+  width: 45%;
+  /* border: 1px solid white; */
+}
+
+.project-wrapper p {
+  font-weight: 700;
+  font-size: 18px;
+  color: #a148b7;
+}
+
+.project-wrapper h3 {
+  font-size: 32px;
+  color: white;
+  margin-top: 4px;
+  margin-bottom: 15px;
+}
+
+.project-wrapper a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.project-wrapper i {
+  margin-left: 5px;
+}
+
+.project2 {
+  width: 70%;
+  height: 300px;
+  border-radius: 15px;
+  background-image: url(/assets/perpustakaan.png);
+  background-size: 100%;
+  background-position: center;
+  border: 2px solid #a148b7;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  transition: background-size 0.1s ease-in;
+}
+
+.project2:hover {
+  background-size: 112%;
+}
+
+.project3 {
+  width: 70%;
+  height: 300px;
+  border-radius: 15px;
+  background-image: url(/assets/personalweb.png);
+  background-size: 100%;
+  background-position: center;
+  border: 2px solid #a148b7;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  transition: background-size 0.1s ease-in;
+}
+
+.project3:hover {
+  background-size: 112%;
+}
+
+@media only screen and (max-width: 558px) {
+  .project1,.project2,.project3 {
+    height: 300px;
+    width: 80%;
+    background-size: cover;
+  }
+
+  .project1:hover,.project2:hover,.project3:hover {
+    background-size: cover;
+  }
+
+  .project-wrapper {
+    width: 75%;
+    /* border: 1px solid white; */
+  }
+  
+  .project-wrapper p {
+    font-weight: 700;
+    font-size: 18px;
+    color: #c2c2c2;
+  }
+  
+  .project-wrapper h3 {
+    font-size: 26px;
+    color: white;
+    margin-top: 4px;
+    margin-bottom: 15px;
+  }
+  
+  .project-wrapper a {
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .project-wrapper i {
+    margin-left: 5px;
+  }
 }
