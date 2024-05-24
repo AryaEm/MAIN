@@ -26,7 +26,7 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#project">Project</a></li>
-        <li><a href="#certif">Certificates</a></li>
+        <li><a href="#certificates">Certificates</a></li>
       </ul>
     </nav>
 
@@ -48,7 +48,38 @@
         <div class="wrapper2-content">
           <p>Hi There 👋</p>
           <h1>Welcome to my <span>landing page</span>!</h1>
-          <a href="#about"><button class="about-btn">About Me</button></a>
+          <a href="#about">
+            <button class="c-button c-button--gooey">
+              About me
+              <div class="c-button__blobs">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              style="display: block; height: 0; width: 0"
+            >
+              <defs>
+                <filter id="goo">
+                  <feGaussianBlur
+                    in="SourceGraphic"
+                    stdDeviation="10"
+                    result="blur"
+                  ></feGaussianBlur>
+                  <feColorMatrix
+                    in="blur"
+                    mode="matrix"
+                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                    result="goo"
+                  ></feColorMatrix>
+                  <feBlend in="SourceGraphic" in2="goo"></feBlend>
+                </filter>
+              </defs>
+            </svg>
+          </a>
         </div>
       </div>
     </section>
@@ -75,8 +106,36 @@
             hope you enjoy your stay!
           </p>
           <a style="text-decoration: none" href="#project"
-            ><button class="about-btn">project</button></a
+          <button class="c-button c-button--gooey">
+            Project
+            <div class="c-button__blobs">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            style="display: block; height: 0; width: 0"
           >
+            <defs>
+              <filter id="goo">
+                <feGaussianBlur
+                  in="SourceGraphic"
+                  stdDeviation="10"
+                  result="blur"
+                ></feGaussianBlur>
+                <feColorMatrix
+                  in="blur"
+                  mode="matrix"
+                  values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                  result="goo"
+                ></feColorMatrix>
+                <feBlend in="SourceGraphic" in2="goo"></feBlend>
+              </filter>
+            </defs>
+          </svg>          </a>
         </div>
       </div>
 
@@ -285,9 +344,40 @@
           <div class="project-wrapper">
             <p>Website</p>
             <h3>Personal Website</h3>
-            <a href="https://github.com/AryaEm/perpustakaan-php"
+            <a href="https://github.com/AryaEm/MAIN-mungkin-"
               >VIEW CODE <i class="fa-solid fa-arrow-right"></i
             ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="certificates" id="certificates">
+      <div class="certificates-head">
+        <h3>Certificates</h3>
+      </div>
+      <div class="certificates-wrapper">
+        <div class="cards-c">
+          <div class="card-c red">
+            <p class="tip">
+              <img src="/assets/Arya Maulana.png" alt="" />
+            </p>
+          </div>
+          <div class="card-c blue">
+            <p class="tip">
+              <img
+                src="/assets/arya-maulana-certificate-attendance-sefc-1.png"
+                alt=""
+              />
+            </p>
+          </div>
+          <div class="card-c green">
+            <p class="tip">
+              <img
+                src="/assets/arya-maulana-dasar-html-css-certificate (1)-1.png"
+                alt=""
+              />
+            </p>
           </div>
         </div>
       </div>
