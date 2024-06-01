@@ -951,6 +951,8 @@ nav ul li a:hover {
 
 .fav-wrap {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 50px;
   flex-wrap: wrap;
 }
