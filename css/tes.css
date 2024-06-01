@@ -1,60 +1,54 @@
-*,
-html,
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Segoe UI", sans-serif;
-  background-color: #504759;
+*, html {
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', sans-serif ;
 }
 
-.seng {
-  width: 100%;
-  height: 100vh;
-  background-color: #504759;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  border: 1px solid blue;
-}
-
-.container7-atas {
-  width: 100%;
-  height: 48%;
-  border: 1px solid white;
-  display: flex;
-  justify-content: space-between;
-}
-
-.container7-bawah {
-  width: 100%;
-  height: 48%;
-  border: 1px solid white;
-  display: flex;
-  justify-content: space-between;
-}
-
-.img7-1 {
-    width: 20%;
-    height: 100%;
-    border: 1px solid blue;
-    margin: 0 100px;
-    
-}
-
-.img7-2 {
-    width: 20%;
-    height: 100%;
-    border: 1px solid blue;
-    margin: 0 100px;
-    background-image: url(/assets/zwtaa.png);
-    background-color: #504759;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.img7-2 img {
+.container {
+    background-color: #353535;
     width: 100%;
-    height: 100% ;
+    height: 100dvh; 
+    display: flex;
+}
+
+.konten-kiri {
+    width: 45%;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    border: 1px solid white;
+}
+
+.konten-kiri div{
+    color: white;
+}
+
+.isi {
+    width: 70%;
+}
+
+.isi h1 {
+    margin-bottom: 10px;
+}
+
+.konten-kanan {
+    width: 55%;
+    height: 100dvh;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.isi2 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #505050;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
