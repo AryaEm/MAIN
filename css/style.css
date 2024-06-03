@@ -565,8 +565,9 @@ nav ul li a:hover {
 }
 
 .skill-wrap {
-  width: 100%;
+  width: 70%;
   height: fit-content;
+  margin: auto;
   margin-top: 50px;
   display: flex;
   justify-content: space-evenly;
@@ -599,11 +600,16 @@ nav ul li a:hover {
   width: 100%;
   margin: 0;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 2px;
   color: white;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 4px;
+  animation: all 0.3s ease-in;
+}
+
+.skill-card:hover .title {
+  color: #0072b1;
 }
 
 .skill-card .text {
@@ -611,7 +617,7 @@ nav ul li a:hover {
   margin: 0 auto;
   font-size: 13px;
   text-align: center;
-  margin-top: 5px;
+  margin-top: 2px;
   color: white;
   font-weight: 200;
   letter-spacing: 2px;
@@ -636,6 +642,7 @@ nav ul li a:hover {
       max-width: 210px;
       height: 60px;
       font-size: 14px;
+
     }
   
     .skill-card .title {
@@ -689,6 +696,7 @@ nav ul li a:hover {
       max-width: 180px;
       height: 50px;
       font-size: 12px;
+      margin-top: 50px;
     }
   
     .skill-card .title {
