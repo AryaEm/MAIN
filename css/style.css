@@ -32,10 +32,10 @@ nav div {
 
 nav {
   padding: 1.5rem 5rem;
-  background-color: #22182d;
+  background-color: #22182dca;
   display: flex;
   justify-content: space-between;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.53);
   position: fixed;
   width: 100%;
   z-index: 999;
