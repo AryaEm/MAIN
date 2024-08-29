@@ -35,7 +35,6 @@ nav {
   background-color: transparent;
   display: flex;
   justify-content: space-between;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.53);
   position: fixed;
   width: 100%;
   z-index: 999;
